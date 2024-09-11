@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Newsletter sign-up form</title>
+  </head>
+  <body>
+    <main>
+      <!-- Desktop Form container Start -->
+      <div class="main-card-container">
+        <div class="form-container">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+          <form id="signupForm">
+            <label for="email">Email address</label>
+            <p id="error-msg"></p>
+            <input type="email" placeholder="email@company.com" id="email" />
+            <button class="submit-btn" type="submit">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+
+        <img
+          src="./images/illustration-sign-up-desktop.svg"
+          alt="image"
+          class="image-container"
+        />
+      </div>
+
+      <!-- Desktop Thank you container Start -->
+      <div class="thank-you-container">
+        <img src="./images/icon-success.svg" alt="" class="thank-you-img" />
+        <h1>Thanks for subscribing!</h1>
+        <p>
+          A confirmation email has been sent to <span id="email-input"></span>.
+          Please open it and click the button inside to confirm your
+          subscription.
+        </p>
+        <button id="dismiss-btn">Dismiss message</button>
+      </div>
+      <!-- Desktop Thank you container End -->
+
+      <!-- Desktop Form container End -->
+
+      <!-- Mobile Form container Start -->
+      <div class="mobile-main-card-container">
+        <img src="./images/illustration-sign-up-mobile.svg" alt="" />
+        <div class="mobile-form-container">
+          <h1 class="mobile-heading">Stay updated!</h1>
+          <p class="mobile-p">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ul class="mobile-list">
+            <li>Product discovery and building what matters</li>
+            <li>Measuring to ensure updates are a success</li>
+            <li>And much more!</li>
+          </ul>
+          <form id="mobile-signupForm">
+            <label for="email">Email address</label>
+            <p id="mobile-error-msg"></p>
+            <input
+              type="email"
+              placeholder="email@company.com"
+              id="mobile-email"
+            />
+            <button class="mobile-submit-btn" type="submit">
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Mobile Thank you container Start -->
+      <div class="mobile-thank-you-container">
+        <div class="mobile-thank-you-content-container">
+          <img
+            src="./images/icon-success.svg"
+            alt=""
+            class="mobile-thank-you-img"
+          />
+          <h1 class="mobile-thank-yoy-msg-heading">Thanks for subscribing!</h1>
+          <p class="mobile-confirmation-text">
+            A confirmation email has been sent to
+            <span id="mobile-email-input"></span>. Please open it and click the
+            button inside to confirm your subscription.
+          </p>
+        </div>
+        <button id="mobile-dismiss-btn">Dismiss message</button>
+      </div>
+      <!-- Mobile Thank you container End -->
+
+      <!-- Mobile Form container End -->
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
