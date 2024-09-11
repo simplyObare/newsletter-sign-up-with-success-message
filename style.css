@@ -31,7 +31,6 @@ body {
 
 .main-card-container {
    width: 650px;
-   height: 430px;
    background-color: var(--White);
    border-radius: 1.25rem;
    display: flex;
@@ -43,6 +42,10 @@ body {
 
 .image-container {
    width: 44%;
+}
+
+.image-mobile {
+   display: none;
 }
 
 .form-container {
@@ -150,6 +153,7 @@ body {
    flex-direction: column;
    gap: 1.5rem;
    border-radius: 1.25rem;
+   max-height: 100vh;
 
 }
 
@@ -189,12 +193,6 @@ body {
    transition: .5s;
 }
 
-.mobile-main-card-container {
-   display: none;
-}
 
-.mobile-thank-you-container {
-   display: none;
-}
 
 /* Media Queries */
