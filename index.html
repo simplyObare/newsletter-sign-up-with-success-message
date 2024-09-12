@@ -9,7 +9,7 @@
   </head>
   <body>
     <main>
-      <!-- Desktop Form container Start -->
+      <!-- Form container Start -->
       <div class="main-card-container">
         <div class="form-container">
           <h1>Stay updated!</h1>
@@ -20,8 +20,10 @@
             <li>And much more!</li>
           </ul>
           <form id="signupForm">
-            <label for="email">Email address</label>
-            <p id="error-msg"></p>
+            <div class="label-and-error-msg">
+              <label for="email">Email address</label>
+              <span id="error-msg">yyyyyyy</sp>
+            </div>
             <input type="email" placeholder="email@company.com" id="email" />
             <button class="submit-btn" type="submit">
               Subscribe to monthly newsletter
@@ -30,26 +32,35 @@
         </div>
 
         <div class="image-container">
-          <img src="./images/illustration-sign-up-desktop.svg" alt="image" class="image-desktop"/>
+          <img
+            src="./images/illustration-sign-up-desktop.svg"
+            alt="image"
+            class="image-desktop"
+          />
 
-          <img src="./images/illustration-sign-up-mobile.svg" alt="" class="image-mobile"/>
+          <img
+            src="./images/illustration-sign-up-mobile.svg"
+            alt=""
+            class="image-mobile"
+          />
         </div>
       </div>
 
-      <!-- Desktop Thank you container Start -->
+      <!-- Thank you container Start -->
       <div class="thank-you-container">
-        <img src="./images/icon-success.svg" alt="" class="thank-you-img" />
-        <h1>Thanks for subscribing!</h1>
-        <p>
-          A confirmation email has been sent to <span id="email-input"></span>.
-          Please open it and click the button inside to confirm your
-          subscription.
-        </p>
+          <img src="./images/icon-success.svg" alt="" class="thank-you-img" />
+          <h1>Thanks for subscribing!</h1>
+          <p>
+            A confirmation email has been sent to <span id="email-input"></span>.
+            Please open it and click the button inside to confirm your
+            subscription.
+          </p>
+  
         <button id="dismiss-btn">Dismiss message</button>
       </div>
-      <!-- Desktop Thank you container End -->
+      <!-- Thank you container End -->
 
-      <!-- Desktop Form container End -->
+      <!-- Form container End -->
     </main>
 
     <script src="index.js"></script>

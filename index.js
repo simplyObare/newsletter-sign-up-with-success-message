@@ -1,5 +1,3 @@
-// Desktop signUp
-
 function validateEmail(email) {
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
@@ -7,7 +5,7 @@ function validateEmail(email) {
 }
 
 const mainFormContainer = document.querySelector('.main-card-container')
-const thakYouContainer = document.querySelector('.thank-you-container')
+const thankYouContainer = document.querySelector('.thank-you-container')
 
 document.getElementById('signupForm').addEventListener('submit', (e) => {
   e.preventDefault()
@@ -23,7 +21,7 @@ document.getElementById('signupForm').addEventListener('submit', (e) => {
     errorMessage.textContent = ''
 
     mainFormContainer.style.display = 'none'
-    thakYouContainer.style.display = 'flex'
+    thankYouContainer.style.display = 'flex'
     emailAddress.innerHTML = emailInput.value
   } else {
     errorMessage.textContent = 'Valid email required.'
@@ -37,5 +35,5 @@ document.getElementById('signupForm').addEventListener('submit', (e) => {
 const dismissBtn = document.getElementById('dismiss-btn')
 dismissBtn.addEventListener('click', () => {
   mainFormContainer.style.display = 'flex'
-  thakYouContainer.style.display = 'none'
+  thankYouContainer.style.display = 'none'
 })
