@@ -229,15 +229,17 @@ label {
    }
 
    .form-container {
-      display: none;
+      display: flex;
       flex-direction: column;
       gap: 2rem;
       margin: 2rem;
    }
 
    .thank-you-container {
+      width: 100%;
+      height: 100vh;
       padding: 3.5rem;
-      display: flex;
+      display: none;
       gap: 1rem;
 
    }
